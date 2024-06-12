@@ -13,3 +13,7 @@
 #Trying this
 x=2
 x
+#Run only once: 
+instal.packages("tidyverse")
+#Add this line whenever want to utilize
+library(tidyverse)
