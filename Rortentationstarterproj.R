@@ -28,6 +28,7 @@ View(Orientation_dataset)
 #reassign the variable name
 ordata=Orientation_dataset
 hist(ordata$CPU.Number.of.Cores..int., main="CPU Cores Survey Data", xlab="Number of Cores", col="darkgreen")
+
 #info about histogram
 ?hist
 #slide 44
@@ -35,4 +36,11 @@ hist(ordata$CPU.Number.of.Cores..int., main="CPU Cores Survey Data", xlab="Numbe
 #GGplot histagram
 install.packages("ggplot2")                          # Install and load ggplot2
 library("ggplot2")
-#
+#making the histagram
+attach(ordata)
+ggplot(ordata, aes(x=CPU.Number.of.Cores..int.))                           # Modify title & axis labels
+  geom_histogram(color="darkgreen") +
+  labs(title = "CPU Cores Survey Data",
+       x = "Number of Cores",
+       y = "Frequency")
+
