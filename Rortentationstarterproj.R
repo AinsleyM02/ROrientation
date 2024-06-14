@@ -27,7 +27,12 @@ Orientation_dataset <- read.csv("~/UVA Orientation/Orientation_dataset.csv")
 View(Orientation_dataset)
 #reassign the variable name
 ordata=Orientation_dataset
-hist(ordata$RAM..in.GB., main="Ainsley's Histogram of RAM", xlab="RAM in GB")
+hist(ordata$CPU.Number.of.Cores..int., main="CPU Cores Survey Data", xlab="Number of Cores", col="darkgreen")
 #info about histogram
 ?hist
-
+#slide 44
+#trying it with GGplot
+#GGplot histagram
+install.packages("ggplot2")                          # Install and load ggplot2
+library("ggplot2")
+#
