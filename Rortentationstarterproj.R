@@ -27,5 +27,7 @@ Orientation_dataset <- read.csv("~/UVA Orientation/Orientation_dataset.csv")
 View(Orientation_dataset)
 #reassign the variable name
 ordata=Orientation_dataset
-hist(ordata$Hard.Drive.Size..in.GB.)
+hist(ordata$RAM..in.GB., main="Ainsley's Histogram of RAM", xlab="RAM in GB")
+#info about histogram
+?hist
 
