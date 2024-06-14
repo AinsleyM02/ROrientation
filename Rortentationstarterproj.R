@@ -27,4 +27,5 @@ Orientation_dataset <- read.csv("~/UVA Orientation/Orientation_dataset.csv")
 View(Orientation_dataset)
 #reassign the variable name
 ordata=Orientation_dataset
+hist(ordata$Hard.Drive.Size..in.GB.)
 
