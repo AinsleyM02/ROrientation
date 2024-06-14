@@ -1,5 +1,7 @@
 #title "Intro R Things"
 
+#The R equivalent of the package pandas in python is "tidyverse" 
+
 #How to clone a repo and push things from R to GitHub:
 #Go to github>go to repository>code>copy http link
 #Go to R>New Proj> version control>git>paste copied link, 
