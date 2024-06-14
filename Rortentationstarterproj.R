@@ -13,7 +13,16 @@
 #Trying this
 x=2
 x
+
 #Run only once: 
 instal.packages("tidyverse")
 #Add this line whenever want to utilize
 library(tidyverse)
+
+#import that data
+Orientation_dataset <- read.csv("~/UVA Orientation/Orientation_dataset.csv")
+#view it
+View(Orientation_dataset)
+#reassign the variable name
+ordata=Orientation_dataset
+
