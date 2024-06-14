@@ -33,10 +33,10 @@ hist(ordata$CPU.Number.of.Cores..int., main="CPU Cores Survey Data", xlab="Numbe
 ?hist
 #slide 44
 #trying it with GGplot
-#GGplot histagram
+#GGplot histogram
 install.packages("ggplot2")                          # Install and load ggplot2
 library("ggplot2")
-#making the histagram
+#making the histogram
 attach(ordata)
 ggplot(ordata, aes(x=CPU.Number.of.Cores..int.))                           # Modify title & axis labels
   geom_histogram(color="darkgreen") +
